@@ -658,7 +658,7 @@ class MemoryMap {
             lowAddress = blockAddr % 0x10000;
             let blockOffset = 0;
             const blockEnd = blockAddr + blockSize;
-            if (blockEnd > 0xFFFFFFFF) {
+            if (blockEnd > 0xFFFFFFFF + 1) {
                 throw new Error('Data cannot be over 0xFFFFFFFF');
             }
 

@@ -1,6 +1,6 @@
 {
-  "name": "nrf-intel-hex",
-  "version": "1.4.0",
+  "name": "@kseniasecurity/nrf-intel-hex",
+  "version": "1.4.4-3",
   "license": "BSD",
   "description": "Parser/writer for the Intel HEX format",
   "module": "intel-hex.js",
@@ -33,9 +33,21 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "repository": "https://github.com/NordicSemiconductor/nrf-intel-hex.git",
+  "repository": "https://github.com/KseniaSecurity/nrf-intel-hex.git",
+  "files": [
+    "LICENSE",
+    "package.json",
+    "intel-hex.js",
+    "intel-hex.d.ts",
+    "intel-hex.browser.js",
+    "intel-hex.cjs.js"
+  ],
   "jest": {
     "testEnvironment": "node",
     "testResultsProcessor": "jest-bamboo-formatter"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   }
 }
